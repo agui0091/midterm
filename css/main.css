@@ -55,7 +55,7 @@
  .topmenu ul {
    display: flex;
    justify-content: space-evenly;
-   background-color: var(--purple);
+   background-color: purple;
    max-width: 100%;
    padding: 8px 0;
    list-style: none;
