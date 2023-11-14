@@ -1,0 +1,377 @@
+/* ----default------ */
+/* custom color group for the global setting of the webpages */
+:root {
+  --turqye:rgb(19, 151, 151);
+   --purple: purple;
+   
+ }
+ 
+ body {
+   background-color: rgb(19, 151, 151);;
+   font-family: 'Libre Baskerville', serif;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;;
+   position: relative;
+   line-height: 1.2;
+ }
+ 
+ h1 {
+   font-size: 2.5em;
+   font-family: 'Libre Baskerville', serif;
+ }
+ 
+ h2 {
+   font-size: 2em;
+   font-family: 'Libre Baskerville', serif;
+ }
+ 
+ 
+ 
+ 
+ /* ------styling header------ */
+ /* header is fixed when scrolling */
+ .header {
+   position: fixed;
+   top: 0;
+   display: block;
+   width: 100%;
+   z-index: 1;
+ }
+ 
+ .topheader {
+   display: flex;
+   background-color: white;
+   max-width: calc(100% - 16px);
+   padding: 8px;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .topheader img {
+   display: inline-block;
+   width: auto;
+   height: 30px;
+ }
+ 
+ .topmenu ul {
+   display: flex;
+   justify-content: space-evenly;
+   background-color: var(--purple);
+   max-width: 100%;
+   padding: 8px 0;
+   list-style: none;
+ }
+ 
+ .topmenu a {
+   position: relative;
+   color: rgb(159, 243, 243); 
+   font-size: 1.5em;
+ }
+ 
+ .topmenu a:active {
+   color: var(--white);
+ }
+ 
+ /* styling main body */
+ main {
+   margin-top: calc(68px + 1.5em);
+ }
+ 
+ /* the padding is consistent across the webpages */
+ .content {
+   padding: 20px 24px 0 24px;
+ }
+ 
+ /* styling banner part */
+ .banner img {
+   display: block;
+   width: 100%;
+ }
+ 
+ /* styling footer */
+ footer {
+   padding: 20px;
+   text-align: center;
+   margin-top: 20px;
+    color: white; 
+ }
+ 
+ .social-media a, u {
+   color: white; /* icon's color */
+   margin: 0 10px;
+   font-size: 20px;
+ }
+ 
+ .social-media i {
+   transition: color 0.3s ease-in-out;
+   font-size: 34px; 
+ }
+ 
+ .social-media i:hover {
+   color: purple;
+ }
+ .footer-right {
+   color: white;
+   width: calc(180px - -120px);
+   text-align: center;
+ }
+ 
+ /* ------styling home page----- */
+ 
+ /* apply grid on flavor boxes to control elements in different viewports */
+ .flavor-content {
+   display: grid;
+   grid-auto-flow: row;
+ }
+ 
+ .flavor-box {
+   display: block;
+   border: solid 1px black;
+   padding: 10px;
+   margin-top: 10px;
+ }
+ 
+ .flavor-intro {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 5px;
+ }
+ 
+ .flavor-intro h4 {
+   font-weight: bold;
+ }
+ 
+ .flavor-more {
+   
+   font-weight: bold;
+   font-style: italic;
+   font-size: 0.6em;
+   background-color: purple;
+   color: white;
+   border-radius: 2em;
+   border: none;
+   padding: 0 10px;
+   text-align: center;
+   cursor: pointer;
+ }
+ 
+ .flavor-details {
+   display: block; 
+   margin: 0 auto;
+   padding-top: 5px;
+   border-top: solid 0.8px black;  
+   width: 100%;
+   height: 100px; 
+   overflow-y: auto;
+ }
+ 
+ 
+ /* ------styling about page ---------*/
+ .about-content div {
+   padding: 10px 0;
+   margin-bottom: 16px;
+ }
+ 
+ .about-content h2 {
+   color: var(purple);
+ }
+ 
+ .about-content p {
+   padding-top: 6px;
+ }
+ 
+ 
+ .contact-redirect {
+   text-align: center;
+ }
+ 
+ .typing h2 {
+   font-family: 'Times New Roman', Times, serif;
+   font-style: italic;
+   margin-bottom: 16px;
+   animation-name: neon;
+   animation-duration: 1.5s;
+   animation-timing-function: step-end;
+   animation-iteration-count: infinite;
+   animation-fill-mode: both;
+ }
+ 
+ /* animated wording to call to action */
+ @keyframes neon {
+   50% {
+       color: var(--purple);
+       text-shadow: 0 0 3px var(--turqye);
+   }
+ }
+ 
+ /*----------Pagina contact-------------*/
+ 
+ .contact_form{  
+   width: 40%; 
+   height: auto;
+   margin: 80px auto;
+   border-radius: 10px;  
+   padding-top: 30px;
+   padding-bottom: 20px;  
+   background-color:rgba(251, 251, 251, 0.5);
+   padding-left: 130px; 
+ }
+ 
+ input{
+   background-color: #fbfbfb; 
+   width: 408px; 
+   height: 40px; 
+   border-radius: 5px;  
+   border-style: solid; 
+   border-width: 1px; 
+   border-color: #ab4493; 
+   margin-top: 10px;  
+   padding-left: 10px;
+   margin-bottom: 20px; 
+ }
+ 
+ textarea{
+   background-color: #fbfbfb; 
+   width: 405px; 
+   height: 150px; 
+   border-radius: 5px;  
+   border-style: solid; 
+   border-width: 1px; 
+   border-color: #ab4493; 
+   margin-top: 10px;  
+   padding-left: 10px;
+   margin-bottom: 20px; 
+   padding-top: 15px; 
+ }
+ 
+ label{
+   display: block; 
+   float: center;  
+ }
+ 
+ button{
+   height: 45px; 
+   padding-left: 5px;
+   padding-right: 5px;   
+   margin-bottom: 20px; 
+   margin-top: 10px;   
+   text-transform: uppercase;
+   background-color: #ab4493; 
+   border-color: #ab4493; 
+   border-style: solid; 
+   border-radius: 10px;  
+   width: 420px;   
+   cursor: pointer;
+ }
+ 
+ button p{
+   color: #fff; 
+ }
+ 
+ span{
+   color: purple; 
+ }
+ 
+ .aviso{
+   font-size: 13px;  
+   color: #0e0e0e;  
+ }
+ 
+ h1{
+   font-size: 39px;  
+   text-align: letf; 
+   padding-bottom: 20px; 
+   color: #ab4493;
+ }
+ 
+ p{
+   font-size: 14px; 
+   color: #0e0e0e; 
+ }
+ 
+ 
+ 
+ /* different setting in 760px viewport */
+ @media only screen and (min-width: 760px) {
+   body {        
+       line-height: 1.4;
+   }
+   
+   h1 {
+       font-size: 3em;
+   }
+   
+   h2 {
+       font-size: 2.6em;
+   }
+   
+   
+   p, table {
+       font-size: 1.2em;
+   }
+   
+  
+   .topheader {
+       padding: 12px;
+   }
+ 
+   .topheader img {
+       height: 50px;
+   }
+ 
+   .header .fa {
+       font-size: 1.5em;
+       font-weight: bold;
+   }
+ 
+   main {
+       margin-top: calc(105px + 1.5em);
+   }
+ 
+   .content {
+       padding: 30px 50px 0 50px;
+   }
+ 
+   .banner img {
+       height: 500px;
+       object-fit: cover;
+   }
+ 
+   footer {
+       font-size: 1em;
+       padding: 16px;
+       justify-content: space-between;
+   }
+ 
+   .footer-right {
+       width: calc(240px - 16px);
+   }
+ 
+   .flavor-content {
+       grid-template-areas: 
+       "eventh eventh"
+       "eventa eventb"
+       "eventc eventd";
+       grid-template-columns: 1fr 1fr;
+       column-gap: 1em;
+   }
+ 
+   .flavor-content h2 {
+       grid-area: eventh;
+   }
+   
+   .flavor-content:nth-child(2) {
+       grid-area: eventa;
+   }
+ 
+   .flavor-content:nth-child(3) {
+       grid-area: eventb;
+   }
+ 
+   .flavor-more {
+       font-size: 1em;
+       border-radius: 4em;
+       padding: 0 20px;
+   }
+ }
+ 
+ 
