@@ -3,34 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <title>Contact Page</title>
 
 
-<body>  
-  <header class="header" id="header" role="landmark">
-    <div class="topheader">
-        <a href="index.html" aria-label="Go to the home page"><img src="images/logo.png" alt="our logo"></a>
-    </div>
 
-    <nav role="navigation" class="topmenu">
-        <ul>
-            <li><a href="index.html" aria-label="Go to the home page">Home</a></li>
-            <li itemscope itemtype="https://schema.org/AboutPage"><a href="about.html" aria-label="Go to the about page" itemprop="relatedLink">About</a></li>
-            <li itemscope itemtype="https://schema.org/ContactPage"><a href=" contact.html" aria-label="Go to the contact page" itemprop="relatedLink">Contact</a></li>
-        </ul>
-    </nav>
+<body>  
+  <div class="background-about">
+    <header>
+       <!-- <div class="nav"> -->
+        <nav role="navigation" class="topmenu">
+          <ul>
+              <li><a href="index.html" aria-label="Go to the home page">Home</a></li>
+              <li itemscope itemtype="https://schema.org/AboutPage"><a href="about.html" aria-label="Go to the about page" itemprop="relatedLink">About</a></li>
+              <li itemscope itemtype="https://schema.org/ContactPage"><a href="contact.html" aria-label="Go to the contact page" itemprop="relatedLink">Contact</a></li>
+          </ul>
+      </nav>
     </header>    
   
+  
+  
+  <!-- formulario de contacto en html y css -->  
 
 
 
-  <div class="content contact_form">
+  <div class="contact_form">
 
     <div class="formulario">      
-      
-        
+      <h1>Order Now</h1>
+        <h3>write to us we will be happy to assist you</h3>
+
 
           <form action="submeter-formulario.php" method="post">       
 
@@ -86,22 +89,16 @@
   </div>
 
   <footer class="footer">
-    <div class="social-media" > <!--social-media icons-->
+    <div class="social-media" >
       <a href="https://www.facebook.com/tu_pagina_de_facebook" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/tu_pagina_de_instagram" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="mailto:tu@email.com"><i class="fas fa-envelope"></i></a>
       <div>
-      <p class="social-media">&copy; Copyright DeliBliss, 2023 
-      All images are taken from <u>pexels.com</u></p>
+      &copy; Copyright DeliBliss, 2023 <br>
+      All images are taken from <u>pexels.com</u>
     </div>
     </div>
   </footer>
-      <div class="footer-right" itemscope itemtype="https://schema.org/LocalBusiness">
-          <p itemprop="address">
-              Ottawa, Ontario</p>
-          <p itemprop="address">K2J6T2</p>
-          <p itemprop="address">3439873357</p>
-      </div>
-  </footer>
+  </div>
 </body>
 </html>
